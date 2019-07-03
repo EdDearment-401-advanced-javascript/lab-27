@@ -1,5 +1,9 @@
 import React from 'react';
-
+/**
+ * The Counter Component
+ * @class Counter
+ * @extends {React.Component}
+ */
 class Counter extends React.Component {
   constructor(props) {
     super(props);

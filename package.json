@@ -20,18 +20,19 @@
   },
   "devDependencies": {
     "enzyme-adapter-react-16": "^1.7.0",
-    "eslint-plugin-jest": "^22.7.1"
+    "eslint-plugin-jest": "^22.7.1",
+    "react-styleguidist": "^9.1.11"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "lint": "eslint ./",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
   },
-  "jest": {
-    
-  },
+  "jest": {},
   "browserslist": [
     ">0.2%",
     "not dead",
