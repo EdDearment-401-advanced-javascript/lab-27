@@ -6,13 +6,15 @@ class Counter extends React.Component {
     this.state = { count: 0 };
   }
 
-  handleUp = e => {
-    let count = this.state.count + 1;
+  handleUp = (e) => {
+    console.log(e);
+    const count = this.state.count + 1;
     this.updateCounter(count);
   };
 
-  handleDown = e => {
-    let count = this.state.count - 1;
+  handleDown = (e) => {
+    console.log(e);
+    const count = this.state.count - 1;
     this.updateCounter(count);
   };
 
@@ -27,7 +29,7 @@ class Counter extends React.Component {
   }
 
   render() {
-    let classes = ['count', this.state.polarity].join(' ');
+    const classes = ['count', this.state.polarity].join(' ');
     return (
       <section className="counter">
       {/* eslint-disable-next-line */}
