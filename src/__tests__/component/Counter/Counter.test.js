@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Counter from '../../components/Counter/Counter';
+import Counter from '../../../components/Counter/Counter';
 
 describe('Counter component', () => {
   it('has an initial state', () => {
