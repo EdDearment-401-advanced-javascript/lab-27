@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Counter from '../../../components/Counter/Counter';
+import Counter from '../../../components/counter/counter';
 
 describe('Counter component', () => {
   it('has an initial state', () => {
@@ -19,6 +19,7 @@ describe('Counter component', () => {
     });
   
     it('can decrement on - click', () => {
+      // eslint-disable-next-line no-undef
       const app = mount(<Counter />);
       const down = app.find('.down');
 
@@ -29,6 +30,7 @@ describe('Counter component', () => {
       expect(app.state('count')).toBe(-2);
     });
     it('can increment on + click', () => {
+      // eslint-disable-next-line no-undef
       const app = mount(<Counter />);
       const up = app.find('.up');
 
@@ -37,7 +39,7 @@ describe('Counter component', () => {
   
       up.simulate('click');
       expect(app.state('count')).toBe(2);
-    })
+    });
   });
 });
 
@@ -47,5 +49,4 @@ describe('Counter snapshot test', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-
 });

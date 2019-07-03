@@ -4,6 +4,7 @@ import Footer from '../../../components/footer/footer';
 
 describe('<Footer/>', () => {
   it('is alive at application start', () => {
+    // eslint-disable-next-line no-undef
     const app = shallow(<Footer />);
     expect(app.find('footer').exists()).toBeTruthy();
   });
