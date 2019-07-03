@@ -24,11 +24,9 @@ describe('Counter component', () => {
 
       down.simulate('click');
       expect(app.state('count')).toBe(-1);
-      expect(app.find('span').text()).toContain('-1');
   
       down.simulate('click');
       expect(app.state('count')).toBe(-2);
-      expect(app.find('span').text()).toContain('-2');
     });
     it('can increment on + click', () => {
       const app = mount(<Counter />);
