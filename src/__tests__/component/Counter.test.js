@@ -18,7 +18,7 @@ describe('Counter component', () => {
       expect(app.find('.count').text()).toBe('0');
     });
   
-    it('decrements count state on - click', () => {
+    it('can decrement on - click', () => {
       const app = mount(<Counter />);
       const down = app.find('.down');
 
@@ -29,7 +29,17 @@ describe('Counter component', () => {
       down.simulate('click');
       expect(app.state('count')).toBe(-2);
       expect(app.find('span').text()).toContain('-2');
-    });;
+    });
+    it('can increment on + click', () => {
+      const app = mount(<Counter />);
+      const up = app.find('.up');
+
+      up.simulate('click');
+      expect(app.state('count')).toBe(1);
+  
+      up.simulate('click');
+      expect(app.state('count')).toBe(2);
+    })
   });
 });
 
