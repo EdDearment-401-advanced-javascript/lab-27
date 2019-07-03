@@ -12,7 +12,7 @@ class Counter extends React.Component {
 
   /**
    *
-   *
+   *Handles the event if the up button is pressed
    * @memberof Counter
    */
   handleUp = (e) => {
@@ -23,7 +23,7 @@ class Counter extends React.Component {
 
   /**
    *
-   *
+   * Handles the event if the down button is pressed
    * @memberof Counter
    */
   handleDown = (e) => {
@@ -34,7 +34,7 @@ class Counter extends React.Component {
 
   /**
    *
-   *
+   * Up dates whether or not if the number displayed is positive or negative
    * @param {*} count
    * @memberof Counter
    */
@@ -50,7 +50,7 @@ class Counter extends React.Component {
 
   /**
    *
-   *
+   * Renders the buttons to the page
    * @returns
    * @memberof Counter
    */
