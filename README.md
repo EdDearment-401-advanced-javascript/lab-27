@@ -11,7 +11,7 @@
 * [front-end-Netlyfy](https://youthful-torvalds-f4cc39.netlify.com)
 
 #### Documentation
-* [styleguide](http://xyz.com) (React assignments)
+* [styleguide](http://localhost:6060/)
 
 ### Setup
 #### `.env` requirements
