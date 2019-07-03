@@ -10,18 +10,34 @@ class Counter extends React.Component {
     this.state = { count: 0 };
   }
 
+  /**
+   *
+   *
+   * @memberof Counter
+   */
   handleUp = (e) => {
-    console.log(e);
+    e.preventDefault();
     const count = this.state.count + 1;
     this.updateCounter(count);
   };
 
+  /**
+   *
+   *
+   * @memberof Counter
+   */
   handleDown = (e) => {
-    console.log(e);
+    e.preventDefault();
     const count = this.state.count - 1;
     this.updateCounter(count);
   };
 
+  /**
+   *
+   *
+   * @param {*} count
+   * @memberof Counter
+   */
   updateCounter(count) {
     let polarity = '';
     if (count > 0) {
@@ -32,6 +48,12 @@ class Counter extends React.Component {
     this.setState({ count, polarity });
   }
 
+  /**
+   *
+   *
+   * @returns
+   * @memberof Counter
+   */
   render() {
     const classes = ['count', this.state.polarity].join(' ');
     return (
